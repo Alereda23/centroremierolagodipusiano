@@ -30,6 +30,12 @@ header{
 	opacity: 0;
 }
 
+/* Stile per il menu posizionato a destra */
+#menu.menu-right {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
 /* Stile per il menu */
 #menu {
     display: inline-block;
@@ -48,15 +54,23 @@ header{
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 50%; /* Sposta il menu a metà della larghezza del menu principale */
+    transform: translateX(-50%); /* Centra il menu rispetto allo span */
     z-index: 999;
-    background-color: #f0f0f0;
+    background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
   #menu ul li {
-    padding: 10px;
+    padding: 10px 20px ;
     cursor: pointer;
+    text-align: center;
+    width: 200px; /* Imposta la larghezza dei li a 200px */
+  }
+  #menu span {
+    display: inline-block;
+    width: 200px; /* Imposta la larghezza dello span a 200px */
+    text-align: center;
   }
   #menu ul li:hover {
     background-color: #f0f0f0;

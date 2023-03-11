@@ -77,12 +77,12 @@ function showFullMenu() {
           nextImageIndex = (nextImageIndex + 1) % images.length;
           currentImage = document.getElementById("image" + (currentImageIndex + 1));
           nextImage = document.getElementById("image" + (nextImageIndex + 1));
-          setTimeout(transitionImages, 3000);
+          setTimeout(transitionImages, 4000);
         });
       });
     }
 
     currentImage.style.display = "block";
     currentImage.style.opacity = 1;
-    setTimeout(transitionImages, 2000);
+    setTimeout(transitionImages, 2500);
   }
